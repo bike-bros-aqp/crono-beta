@@ -52,7 +52,8 @@ export default function HomePage() {
 
   useEffect(() => {
     const {start,finish} = records
-    if(!start && !finish) return
+    if(!start || !finish) return
+    if(start > finish) return setMessage('El inicio no puede ser mayor al final')
 
     const ans = formatCrono(start,finish)
     setValue(ans)
