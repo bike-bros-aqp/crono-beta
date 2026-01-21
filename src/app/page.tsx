@@ -92,8 +92,8 @@ export default function HomePage() {
             <option value="" disabled>
               -- Selecciona la posicion --
             </option>
-            <option value="start">Inicio</option>
-            <option value="finish">Final</option>
+            <option value="start">Partida</option>
+            <option value="finish">Llegada</option>
           </select>
           <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-primary pointer-events-none"></span>
         </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
         <div className="px-4 py-3 flex items-center justify-between bg-white/5 border-b border-white/5 shrink-0">
           <div className="flex flex-col">
             <span className="text-[9px] uppercase text-slate-500 font-bold tracking-widest">
-              Tiempo:
+              Tiempo Realizado:
             </span>
             <div className="flex items-baseline gap-1 tabular-nums leading-none">
               <span className="text-xl font-bold text-white">{value[0]}</span>
@@ -132,7 +132,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <span className="material-symbols-outlined text-xl">START</span>
+            <span className="material-symbols-outlined text-xl">PARTIDA</span>
           </div>
           <div className="bg-surface-dark border border-white/10 p-3 rounded-xl flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -143,7 +143,7 @@ export default function HomePage() {
               </div>
             </div>
             <span className="material-symbols-outlined text-primary text-[18px]">
-              FINAL
+              LLEGADA
             </span>
           </div>
         </div>
